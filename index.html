@@ -7,7 +7,16 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
+  <nav class="navbar bg-dark">
+  <div class="container ">
+    <a class="navbar-brand" href="#">
+      <h1 class="text-light">Calculate Days</h1>
+      <h6 class="text-light fw-light">Calculates days between two dates.</h6>
+    </a>
+  </div>
+  </nav>
+
+  <div class="container py-4 px-3 mx-auto">
     <div class="input-group mb-3">
       <span class="input-group-text" id="basic-addon1">Date 1</span>
       <input type="text" class="form-control first-date" placeholder="Day / Month / Year" aria-label="Username" aria-describedby="basic-addon1">
@@ -22,7 +31,8 @@
       
     </div>
 
-    <button type="button" class="btn btn-primary btn-calculate">Calculate</button>
+    <button type="button" class="btn btn-secondary btn-today">Today</button>
+    <button type="button" class="btn btn-secondary btn-calculate">Calculate</button>
   </div>
   
 </body>
