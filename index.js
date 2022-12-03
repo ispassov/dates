@@ -6,7 +6,7 @@ let secondDate = document.querySelector('.second-date')
 let btnCalculate = document.querySelector('.btn-calculate')
 let btnToday = document.querySelector('.btn-today')
 let days = document.querySelector('.days')
-
+let monthsArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 btnCalculate.addEventListener('click', () => {
         days.classList.remove('d-none')
@@ -14,6 +14,5 @@ btnCalculate.addEventListener('click', () => {
 })
 
 btnToday.addEventListener('click', () => {
-    let today = `${new Date().getDate()} ${new Date().getMonth() + 1} ${new Date().getFullYear()}`
-    secondDate.value = today
+    secondDate.value = `${new Date().getDate()} ${monthsArray[new Date().getMonth()]} ${new Date().getFullYear()}`
 })
